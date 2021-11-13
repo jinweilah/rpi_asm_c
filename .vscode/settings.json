@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "assignment.h": "c"
+        "assignment.h": "c",
+        "wifi_led.h": "c"
     }
 }
