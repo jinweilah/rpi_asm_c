@@ -104,7 +104,7 @@ int binarynum(int a, int b) /* Function to print out the binary representation f
             printf("0");   /* If binary is not 1 it will print out 0 */
     }
 }
-unsigned int binarytoint(int IEEE[]/*pointer to array*/, int msb, int lsb)
+unsigned int binarytoint(int IEEE[], int msb, int lsb)
 /* Function to change binary array into corresponding integer representation for mantissa, exponent and sign */
 {
     unsigned sum = 0;
