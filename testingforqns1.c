@@ -20,20 +20,14 @@ int main()
     floating num; /* To instatiate the union created */
     int a;
     
-    printf("Enter 1 if you want to convert from decimal number into IEEE 754 binary floating point number \nEnter 2 if you want to convert from IEEE 754 binary floating point number into decimal number: ");
-    scanf("%d", &a); /* Let user choose which converter he want to use */
-
-    while(a != 1 && a!= 2){  /* Ask user to type again if user never enter option 1 or 2*/
-
-    printf("\nWrong input please try again");
-    printf("\nEnter 1 if you want to convert from decimal number into IEEE 754 binary floating point number \nEnter 2 if you want to convert from IEEE 754 binary floating point number into decimal number: ");
-    scanf("%d", &a);
-}
+    /*Please input converter choice number 1 or 2 only*/
+    printf("Enter convert choice 1)Decimal num to IEEE 754 binary floating num 2)IEEE 754 binary floating num to Decimal num: "); 
+    scanf("%d", &a); 
 
     if(a==1)/* If user choose option 1 */
     {
     
-    printf("Enter the decimal number to be converted into IEEE754 binary: ");
+    printf("Enter the decimal number to be converted into IEEE754 binary: "); /*Please input float range number only*/
     scanf("%f", &num.start/* Store integer in union float start */);
 
     printf("The input of decimal number is: %g \n",num.start);
@@ -90,8 +84,8 @@ int main()
         
         /* Based on the values store in int m, int e and int s which is the matissa, exponent and sign values, we will able to get the decimal number value store in float start */
         printf("\nAfter conversion the decimal number is:%g",num.start);/* use %g to remove trailing zeros */
- }
-
+    }
+}
 int binarynum(int a, int b) /* Function to print out the binary representation for mantissa, exponent and sign */
 {
     int c;
@@ -121,8 +115,5 @@ unsigned int binarytoint(int IEEE[]/*pointer to array*/, int msb, int lsb)
 
 
 
-    
-    
-}
 
 
